@@ -1,1 +1,1 @@
-# arts-hotel
+# Arts Hotel
