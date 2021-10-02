@@ -4,30 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            margin: 0;
-        }
-        h1{
-            font-family: sans-serif;
-        }
+    <title>About Us!</title>
+    <!--Import CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+    <style>        
         .about-head{
             padding-top: 10rem;
             padding-bottom: 6rem;
-            background-image: url(https://images.unsplash.com/photo-1495754149474-e54c07932677?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+            background-image: url(https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
             width: 100%;
             height: 100%;
-            opacity: .9;
-            
+            opacity: .7; 
+        }
+        
+        .text-header{
+            font-family: sans-serif;
+            text-align: center !important;
+            text-shadow: #000 0px 0px 5px !important;
+            font-weight: 800;
+            font-size: 5vh;
             
         }
-        .text-center{
-            text-align: center !important;
-            color: white;
+        .about-text{
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            color: black;
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        img{
+            /* display: inline-block; */
+            height: auto;
+            max-width: 100%;
+        }
+        .bold{
+            font-weight: 800;
         }
     </style>
 </head>
@@ -36,15 +55,45 @@
     <!--Header About-Us-->
     <header class="about-head">
         <div class="container-fluid">
-            <div class="row text-center"> <!--d-flex align-items-center justify-content-center-->
+            <div class="row text-header justify-content-center"> <!--d-flex align-items-center justify-content-center-->
                 <div class="col-8">
-                    <h1>About Us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h1 class="display-1 text-light">About Us</h1>
+                    <p class="text-light">Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
             </div>
         </div>
-    </header>    
-    <!--Header About-Us-->
+    </header> 
+
     <!--Words-->
+    <div class="container">
+        <div class="row justify-content-center about-text">
+            <div class="col-lg-6 col-12 ">
+                <h6>ABOUT US</h6>
+                <h3 class="display-5">What We Do</h3><br>
+                <p class="fs-6 fw-bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim sodales ut eu sem integer vitae. Tempus imperdiet nulla malesuada pellentesque elit.</p>
+                <p class="fs-6 text-secondary"> Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. In ornare quam viverra orci sagittis. Orci porta non pulvinar neque. Purus non enim praesent elementum facilisis.</p>
+                <p class="fs-6 text-secondary">Tellus in hac habitasse platea dictumst. Lectus quam id leo in. Commodo ullamcorper a lacus vestibulum sed arcu. Eu turpis egestas pretium aenean pharetra. Massa tincidunt dui ut ornare lectus sit.</p>
+                <!-- <img src="assets/5-stars-rating.png" alt=""> -->
+            </div>
+            <div class="col-lg-6 col-sm-10 col-12">
+                <img src="https://images.unsplash.com/photo-1563911302283-d2bc129e7570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=435&q=80" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--Meet Our Teams-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold">Meet our Team!</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            
+        </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
