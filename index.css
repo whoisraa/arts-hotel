@@ -567,10 +567,6 @@ fieldset:disabled .btn {
     color: inherit;
 }
 
-.footer-classic-nav-list a:hover {
-    color: #505cfd;
-}
-
 @media (min-width: 576px) {
     .footer-classic-subscribe-form {
         display: flex;
