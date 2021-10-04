@@ -971,19 +971,12 @@ textarea.form-input {
 .button-primary:active,
 .button-primary.active {
     color: #ffffff;
-    <<<<<<< HEAD background-color: #2c343b;
-    border-color: #2c343b;
-}
-
-.button-primary.button-ujarak::before {
-    background: #2c343b;
-    =======background-color: #d18217;
+    background-color: #d18217;
     border-color: #d18217;
 }
 
 .button-primary.button-ujarak::before {
     background: #d18217;
-    >>>>>>>home
 }
 
 .single-page .button-primary,
@@ -1052,16 +1045,10 @@ p.copyright a {
     color: inherit;
 }
 
-p.copyright a:hover {
-    color: #505cfd;
-    <<<<<<< HEAD=======
-}
-
 /* back to top button */
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     display: none;
-    >>>>>>>home
 }
