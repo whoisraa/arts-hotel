@@ -1045,10 +1045,6 @@ p.copyright a {
     color: inherit;
 }
 
-p.copyright a:hover {
-    color: #505cfd;
-}
-
 /* back to top button */
 #btn-back-to-top {
     position: fixed;
