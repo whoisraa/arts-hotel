@@ -641,6 +641,7 @@ p.copyright a {
 
 /* back to top button */
 #btn-back-to-top {
+    color: var(--customorange);
     position: fixed;
     bottom: 20px;
     right: 20px;
