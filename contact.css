@@ -2,7 +2,6 @@
 :root {
     --customdark: rgb(73, 61, 62);
     --customorange: #fda62f;
-    --customorange-dark: #d18217;
 }
 
 .orange-color {
@@ -28,7 +27,7 @@ p {
 
 /* nav hover */
 .nav-item:hover {
-    background: var(--customorange);
+    background: #fda62f;
     border-radius: 30px;
 }
 
@@ -96,7 +95,7 @@ hr.divider {
     height: 0.2rem;
     max-width: 6rem;
     margin: 1.5rem auto;
-    background-color: var(--customorange);
+    background-color: #fda62f;
     opacity: 1;
 }
 
@@ -113,8 +112,6 @@ hr.divider-light {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* contact */
 
 /* footer */
 .footer-classic {
@@ -330,7 +327,11 @@ hr.divider-light {
 }
 
 .form-wrap.has-error .form-input {
-    border-color: var(--customorange);
+    border-color: #f5543f;
+}
+
+.form-wrap.has-focus .form-input {
+    border-color: #505cfd;
 }
 
 .form-wrap+* {
@@ -437,7 +438,7 @@ textarea.form-input {
     font-weight: 400;
     line-height: 12px;
     letter-spacing: 0;
-    color: var(--customorange);
+    color: #f5543f;
     transition: .3s;
 }
 
@@ -556,20 +557,39 @@ textarea.form-input {
 .button-primary,
 .button-primary:focus {
     color: #ffffff;
-    background-color: var(--customorange);
-    border-color: var(--customorange);
+    background-color: #fda62f;
+    border-color: #fda62f;
 }
 
 .button-primary:hover,
 .button-primary:active,
 .button-primary.active {
     color: #ffffff;
-    background-color: var(--customorange-dark);
-    border-color: var(--customorange-dark);
+    background-color: #d18217;
+    border-color: #d18217;
 }
 
 .button-primary.button-ujarak::before {
-    background: var(--customorange-dark);
+    background: #d18217;
+}
+
+.single-page .button-primary,
+.single-page .button-primary:focus {
+    color: #ffffff;
+    background-color: #505cfd;
+    border-color: #505cfd;
+}
+
+.single-page .button-primary:hover,
+.single-page .button-primary:active,
+.single-page .button-primary.active {
+    color: #505cfd;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.single-page .button-primary.button-ujarak::before {
+    background: #ffffff;
 }
 
 /* group */
@@ -626,4 +646,73 @@ p.copyright a {
     bottom: 20px;
     right: 20px;
     display: none;
+}
+
+
+.form-contact {
+    width:100%;
+    height:440px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif
+    ;position:relative
+}
+
+
+input {
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+
+input:focus {
+    border-bottom:2px solid #78788c
+}
+
+p:before {
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+
+.button-contact {
+    float:right;
+    font-size: 14px;
+    padding:4px 14px;
+    margin:29px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background-color: #fda62f;
+    color:white;
+    min-height: 60px;
+    min-width: 120px;
+    cursor:pointer;
+    transition:all .3s
+}
+
+.button-contact:hover {
+    background:red;
+    color:#fff
+}
+
+.hotel-maps iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
