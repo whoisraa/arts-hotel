@@ -1,4 +1,9 @@
 /* core */
+:root {
+    --customorange: #fda62f;
+    --customorange-dark: #d18217;
+}
+
 * {
     margin: 0;
 }
@@ -11,6 +16,109 @@ html {
 body {
     width: 100%;
     height: 100%;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Playfair Display", serif, "Poppins", Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1,
+.h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+@media (min-width: 1200px) {
+
+    h1,
+    .h1 {
+        font-size: 2.5rem;
+    }
+}
+
+h2,
+.h2 {
+    font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+
+    h2,
+    .h2 {
+        font-size: 2rem;
+    }
+}
+
+h3,
+.h3 {
+    font-size: calc(1.3rem + 0.6vw);
+}
+
+@media (min-width: 1200px) {
+
+    h3,
+    .h3 {
+        font-size: 1.75rem;
+    }
+}
+
+h4,
+.h4 {
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+@media (min-width: 1200px) {
+
+    h4,
+    .h4 {
+        font-size: 1.5rem;
+    }
+}
+
+h5,
+.h5 {
+    font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* anchor */
+a {
+    color: #aab2b9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff !important;
+}
+
+a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
 }
 
 /* container */
@@ -80,7 +188,7 @@ body {
 
 /* nav hover */
 .nav-item:hover {
-    background: #fda62f;
+    background: var(--customorange);
     border-radius: 30px;
 }
 
@@ -168,115 +276,12 @@ hr.divider {
     height: 0.2rem;
     max-width: 6rem;
     margin: 1.5rem auto;
-    background-color: #fda62f;
+    background-color: var(--customorange);
     opacity: 1;
 }
 
 hr.divider-light {
     background-color: #fff;
-}
-
-/* headings and paragraphs */
-h6,
-.h6,
-h5,
-.h5,
-h4,
-.h4,
-h3,
-.h3,
-h2,
-.h2,
-h1,
-.h1 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-family: "Playfair Display", serif, "Poppins", Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-}
-
-h1,
-.h1 {
-    font-size: calc(1.375rem + 1.5vw);
-}
-
-@media (min-width: 1200px) {
-
-    h1,
-    .h1 {
-        font-size: 2.5rem;
-    }
-}
-
-h2,
-.h2 {
-    font-size: calc(1.325rem + 0.9vw);
-}
-
-@media (min-width: 1200px) {
-
-    h2,
-    .h2 {
-        font-size: 2rem;
-    }
-}
-
-h3,
-.h3 {
-    font-size: calc(1.3rem + 0.6vw);
-}
-
-@media (min-width: 1200px) {
-
-    h3,
-    .h3 {
-        font-size: 1.75rem;
-    }
-}
-
-h4,
-.h4 {
-    font-size: calc(1.275rem + 0.3vw);
-}
-
-@media (min-width: 1200px) {
-
-    h4,
-    .h4 {
-        font-size: 1.5rem;
-    }
-}
-
-h5,
-.h5 {
-    font-size: 1.25rem;
-}
-
-h6,
-.h6 {
-    font-size: 1rem;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-/* anchor */
-a {
-    color: #aab2b9;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #fff !important;
-}
-
-a:not([href]):not([class]),
-a:not([href]):not([class]):hover {
-    color: inherit;
-    text-decoration: none;
 }
 
 /* buttons */
@@ -327,20 +332,20 @@ fieldset:disabled .btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #fda62f;
-    border-color: #fda62f;
+    background-color: var(--customorange);
+    border-color: var(--customorange);
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #d18217;
+    background-color: var(--customorange-dark);
     border-color: #c34e2e;
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #fff;
-    background-color: #d18217;
+    background-color: var(--customorange-dark);
     border-color: #c34e2e;
     box-shadow: 0 0 0 0.25rem rgba(246, 122, 88, 0.5);
 }
@@ -351,8 +356,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #fda62f;
-    border-color: #fda62f;
+    background-color: var(--customorange);
+    border-color: var(--customorange);
 }
 
 .btn-check:checked+.btn-primary:focus,
@@ -366,8 +371,8 @@ fieldset:disabled .btn {
 .btn-primary:disabled,
 .btn-primary.disabled {
     color: #fff;
-    background-color: #fda62f;
-    border-color: #fda62f;
+    background-color: var(--customorange);
+    border-color: var(--customorange);
 }
 
 .btn-light {
@@ -449,7 +454,7 @@ fieldset:disabled .btn {
 
 /* services */
 .bi {
-    color: #fda62f;
+    color: var(--customorange);
 }
 
 /* photos */
@@ -489,7 +494,7 @@ fieldset:disabled .btn {
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 30%, #fda62f) transparent;
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 30%, var(--customorange)) transparent;
     transition: opacity 0.25s ease;
     text-align: center;
 }
@@ -729,11 +734,7 @@ fieldset:disabled .btn {
 }
 
 .form-wrap.has-error .form-input {
-    border-color: #f5543f;
-}
-
-.form-wrap.has-focus .form-input {
-    border-color: #505cfd;
+    border-color: var(--customorange);
 }
 
 .form-wrap+* {
@@ -840,7 +841,7 @@ textarea.form-input {
     font-weight: 400;
     line-height: 12px;
     letter-spacing: 0;
-    color: #f5543f;
+    color: var(--customorange);
     transition: .3s;
 }
 
@@ -959,39 +960,20 @@ textarea.form-input {
 .button-primary,
 .button-primary:focus {
     color: #ffffff;
-    background-color: #fda62f;
-    border-color: #fda62f;
+    background-color: var(--customorange);
+    border-color: var(--customorange);
 }
 
 .button-primary:hover,
 .button-primary:active,
 .button-primary.active {
     color: #ffffff;
-    background-color: #d18217;
-    border-color: #d18217;
+    background-color: var(--customorange-dark);
+    border-color: var(--customorange-dark);
 }
 
 .button-primary.button-ujarak::before {
-    background: #d18217;
-}
-
-.single-page .button-primary,
-.single-page .button-primary:focus {
-    color: #ffffff;
-    background-color: #505cfd;
-    border-color: #505cfd;
-}
-
-.single-page .button-primary:hover,
-.single-page .button-primary:active,
-.single-page .button-primary.active {
-    color: #505cfd;
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
-
-.single-page .button-primary.button-ujarak::before {
-    background: #ffffff;
+    background: var(--customorange-dark);
 }
 
 /* group */
@@ -1043,6 +1025,7 @@ p.copyright a {
 
 /* back to top button */
 #btn-back-to-top {
+    color: var(--customorange);
     position: fixed;
     bottom: 20px;
     right: 20px;
