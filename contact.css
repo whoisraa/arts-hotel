@@ -2,6 +2,7 @@
 :root {
     --customdark: rgb(73, 61, 62);
     --customorange: #fda62f;
+    --customorange-dark: #d18217;
 }
 
 .orange-color {
@@ -27,7 +28,7 @@ p {
 
 /* nav hover */
 .nav-item:hover {
-    background: #fda62f;
+    background: var(--customorange);
     border-radius: 30px;
 }
 
@@ -95,7 +96,7 @@ hr.divider {
     height: 0.2rem;
     max-width: 6rem;
     margin: 1.5rem auto;
-    background-color: #fda62f;
+    background-color: var(--customorange);
     opacity: 1;
 }
 
@@ -111,6 +112,19 @@ hr.divider-light {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* photos */
+.card {
+    color: black;
+}
+
+.card:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+}
+
+.bi-list-nested {
+    padding: 6px 10px 6px;
 }
 
 /* footer */
@@ -327,11 +341,7 @@ hr.divider-light {
 }
 
 .form-wrap.has-error .form-input {
-    border-color: #f5543f;
-}
-
-.form-wrap.has-focus .form-input {
-    border-color: #505cfd;
+    border-color: var(--customorange);
 }
 
 .form-wrap+* {
@@ -438,7 +448,7 @@ textarea.form-input {
     font-weight: 400;
     line-height: 12px;
     letter-spacing: 0;
-    color: #f5543f;
+    color: var(--customorange);
     transition: .3s;
 }
 
@@ -557,39 +567,20 @@ textarea.form-input {
 .button-primary,
 .button-primary:focus {
     color: #ffffff;
-    background-color: #fda62f;
-    border-color: #fda62f;
+    background-color: var(--customorange);
+    border-color: var(--customorange);
 }
 
 .button-primary:hover,
 .button-primary:active,
 .button-primary.active {
     color: #ffffff;
-    background-color: #d18217;
-    border-color: #d18217;
+    background-color: var(--customorange-dark);
+    border-color: var(--customorange-dark);
 }
 
 .button-primary.button-ujarak::before {
-    background: #d18217;
-}
-
-.single-page .button-primary,
-.single-page .button-primary:focus {
-    color: #ffffff;
-    background-color: #505cfd;
-    border-color: #505cfd;
-}
-
-.single-page .button-primary:hover,
-.single-page .button-primary:active,
-.single-page .button-primary.active {
-    color: #505cfd;
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
-
-.single-page .button-primary.button-ujarak::before {
-    background: #ffffff;
+    background: var(--customorange-dark);
 }
 
 /* group */
