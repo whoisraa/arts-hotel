@@ -80,6 +80,11 @@ hr.divider-light {
     background-color: #fff;
 }
 
+.text-white-50 {
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+
 .text-white-75 {
     color: rgba(255, 255, 255, 0.75) !important;
 }
