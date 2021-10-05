@@ -1,22 +1,26 @@
-
-
-:root{
+:root {
     --customdark: rgb(73, 61, 62);
     --customorange: #fda62f;
 }
-.orange-color{
-    color: var(--customorange) ;
+
+.orange-color {
+    color: var(--customorange);
 }
 
-body{
+body {
     background-color: var(--customdark);
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Playfair Display', serif;
 }
 
-p{
+p {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -83,7 +87,7 @@ hr.divider-light {
 /* about */
 
 
-.about-head{
+.about-head {
     padding-bottom: 10rem;
     background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80);
     /* background-image: url(https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80); */
@@ -92,11 +96,11 @@ hr.divider-light {
     background-position: center center;
     width: 100%;
     height: 100%;
-    
+
 }
 
 
-.text-header{
+.text-header {
     padding-top: 5rem;
     font-family: 'Playfair Display', serif;
     text-align: center !important;
@@ -104,68 +108,86 @@ hr.divider-light {
     font-size: 3vh;
 }
 
-.text-header p{
+.text-header p {
     font-family: 'Poppins', sans-serif;
 }
-.about-text{
+
+.about-text {
     font-family: sans-serif;
     font-size: 20px;
     /* color: black; */
     padding-top: 10%;
     padding-bottom: 10%;
 }
-.img-about{
+
+.img-about {
     padding-top: 5%;
     width: 100%;
     height: auto;
     max-width: 100%;
 }
-.bold{
+
+.bold {
     font-weight: 800;
 }
 
-.give-margin{
+.give-margin {
     margin-top: 5%;
     margin-left: 2%;
 }
-.box-content-member{
+
+.box-content-member {
     max-width: 320px;
     width: 100%;
 }
 
-.bg-prime{
+.bg-prime {
     background-color: var(--customdark);
 }
 
-.card-member{
-    width: 300px; 
+/* parallax background */
+.bg-parallax {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("assets/img/hotel-4.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-member {
+    width: 300px;
     margin: 5%;
 }
-.service-pic-1{
+
+.service-pic-1 {
     background-image: url(https://images.unsplash.com/photo-1553369728-15ec6971afaf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVjZXB0aW9uJTIwZGVza3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.service-pic-2{
+
+.service-pic-2 {
     background-image: url(https://images.unsplash.com/photo-1551218372-a8789b81b253?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1ZmZldHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
     background-repeat: no-repeat;
     background-size: cover;
     /* padding-bottom: 50%; */
 }
-.service-pic-3{
+
+.service-pic-3 {
     background-image: url(https://cache.marriott.com/marriottassets/marriott/DPSXR/dpsxr-sunrise-beach-3938-hor-clsc.jpg?interpolation=progressive-bilinear&downsize=*:253px);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.service-pic-4{
+.service-pic-4 {
     background-image: url(https://png.pngitem.com/pimgs/s/557-5572919_5-star-icon-png-transparent-png.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-.hover-txt{
+
+.hover-txt {
     background-color: black;
     opacity: 0;
     transition: ease;
@@ -173,7 +195,8 @@ hr.divider-light {
     padding-top: 50%;
     padding-bottom: 50%;
 }
-.hover-txt:hover{
+
+.hover-txt:hover {
     opacity: .6;
 }
 
@@ -212,12 +235,22 @@ hr.divider-light {
     letter-spacing: .15em;
 }
 
+.accent-link {
+    color: #aab2b9;
+    text-decoration: none;
+}
+
+.accent-link:hover {
+    color: #fff !important;
+}
+
 .footer-classic-nav-list a {
     color: inherit;
+    text-decoration: none;
 }
 
 .footer-classic-nav-list a:hover {
-    color: #d18217 ;
+    color: #fff !important;
 }
 
 @media (min-width: 576px) {
@@ -374,85 +407,6 @@ hr.divider-light {
 /* offset */
 .offset-right-25 {
     margin-right: 25px;
-}
-
-/* fade */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.fadeIn {
-    animation-name: fadeIn;
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInUp {
-    animation-name: fadeInUp;
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, -100%, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInDown {
-    animation-name: fadeInDown;
-}
-
-@keyframes fadeInLeft {
-    0% {
-        opacity: 0;
-        transform: translate3d(-100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInLeft {
-    animation-name: fadeInLeft;
-}
-
-@keyframes fadeInRight {
-    0% {
-        opacity: 0;
-        transform: translate3d(100%, 0, 0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-.fadeInRight {
-    animation-name: fadeInRight;
 }
 
 /* form */
@@ -717,7 +671,7 @@ textarea.form-input {
 .single-page .button-primary:hover,
 .single-page .button-primary:active,
 .single-page .button-primary.active {
-    color: #d18217 ;
+    color: #505cfd;
     background-color: #ffffff;
     border-color: #ffffff;
 }
@@ -771,4 +725,13 @@ p.copyright {
 
 p.copyright a {
     color: inherit;
+}
+
+/* back to top button */
+#btn-back-to-top {
+    color: var(--customorange);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
 }
