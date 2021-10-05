@@ -114,18 +114,7 @@ hr.divider-light {
     background-size: cover;
 }
 
-/* photos */
-.card {
-    color: black;
-}
-
-.card:hover {
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
-}
-
-.bi-list-nested {
-    padding: 6px 10px 6px;
-}
+/* contact */
 
 /* footer */
 .footer-classic {
