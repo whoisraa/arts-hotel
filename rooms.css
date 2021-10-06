@@ -337,11 +337,7 @@ hr.divider-light {
 }
 
 .form-wrap.has-error .form-input {
-    border-color: #f5543f;
-}
-
-.form-wrap.has-focus .form-input {
-    border-color: #505cfd;
+    border-color: var(--customorange);
 }
 
 .form-wrap+* {
@@ -448,7 +444,7 @@ textarea.form-input {
     font-weight: 400;
     line-height: 12px;
     letter-spacing: 0;
-    color: #f5543f;
+    color: var(--customorange);
     transition: .3s;
 }
 
@@ -583,21 +579,6 @@ textarea.form-input {
     background: #d18217;
 }
 
-.single-page .button-primary,
-.single-page .button-primary:focus {
-    color: #ffffff;
-    background-color: #505cfd;
-    border-color: #505cfd;
-}
-
-.single-page .button-primary:hover,
-.single-page .button-primary:active,
-.single-page .button-primary.active {
-    color: #505cfd;
-    background-color: #ffffff;
-    border-color: #ffffff;
-}
-
 .single-page .button-primary.button-ujarak::before {
     background: #ffffff;
 }
@@ -680,32 +661,44 @@ p.copyright a {
 
 
 
-.carousel-inner {
+/* .carousel-inner {
     margin: auto;
-    /* width: 100% !important; */
+    width: 100% !important;
     padding-bottom: 1rem;
     object-fit: contain;
     width: 100%;
-    height: 480px;
-}
+    height: 700px;
+} */
 
 /* .w-100 {
     width: 100% !important;
     height: 320px;
 } */
 
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: var(--customdark);
+@media (min-width: 768px) {
+    .carousel-indicators [data-bs-target] {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
 }
 
-.carousel-control-prev {
+.c-indicator:hover {
+    background-color: var(--customorange);
+}
+
+.bi-caret-left-fill:hover,
+.bi-caret-right-fill:hover {
+    color: var(--customorange);
+}
+
+/* .carousel-control-prev {
     filter: invert(100%)
 }
 
 .carousel-control-next {
     filter: invert(100%)
-}
+} */
 
 /* 
 .tales {
@@ -725,6 +718,10 @@ p.copyright a {
 
 .col-md-3 {
     padding: 1em 0.5em 0em;
+}
+
+.card:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
 
 .card-title {
