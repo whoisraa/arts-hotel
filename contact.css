@@ -110,7 +110,7 @@ hr.divider-light {
 
 /* parallax background */
 .bg-parallax {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("assets/img/hotel-5.jpg");
+    background-image: url("assets/img/hotel-sunrise.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -660,8 +660,9 @@ p.copyright a {
     background: #e6e6e6;
     border-radius: 8px;
     box-shadow: 0 0 40px -10px #000;
-    margin: calc(50vh - 220px) auto;
-    padding: 20px 30px;
+    /* margin: calc(50vh - 220px) auto; */
+    margin-bottom: 75px;
+    padding: 10px 30px;
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
