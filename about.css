@@ -152,7 +152,7 @@ hr.divider-light {
 
 /* parallax background */
 .bg-parallax {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url("assets/img/hotel-4.jpg");
+    background-image: url("assets/img/hotel-dining.jpg");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
